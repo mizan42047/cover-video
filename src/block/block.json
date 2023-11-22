@@ -21,11 +21,11 @@
 		},
 		"title": {
 			"type": "string",
-			"default": "Panther Paradise"
+			"default": "Video Title"
 		},
 		"subtitle": {
 			"type": "string",
-			"default": "Kabini Photo Tour"
+			"default": "Video Subtitle"
 		}
 	},
 	"supports": {
@@ -36,7 +36,7 @@
 	"textdomain": "cover-video",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": ["file:./style-index.css", "cover-video-libs", "google-fonts"],
+	"style": ["file:./style-index.css", "google-fonts"],
 	"script": ["cover-video-libs"],
 	"viewScript": "file:./view.js"
 }

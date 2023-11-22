@@ -26,8 +26,7 @@ function cover_video_block_init()
 add_action('init', 'cover_video_block_init');
 
 function cover_video_block_enqueue(){
-	wp_register_script('cover-video-libs', plugin_dir_url(__FILE__) . 'assets/fancybox.js', array(), '1.0.0', true);
-	wp_register_style('cover-video-libs', plugin_dir_url(__FILE__) . 'assets/fancybox.css', array(), '1.0.0', 'all');
+	wp_register_script('cover-video-libs', "https://www.youtube.com/iframe_api", array(), '1.0.0');
 	wp_register_style("google-fonts", "https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;700&display=swap", array(), "1.0.0", "all");
 }
 add_action('enqueue_block_assets', 'cover_video_block_enqueue');
